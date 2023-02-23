@@ -30,15 +30,18 @@ a {
   position: relative;
 }
 
+.img {
+  /* object-fit: cover; */
+}
+
 img {
-  height: 1017px;
-  width: 732px;
-  top: 7px;
+  height: 85vh;
+  width: 43vw;
 }
 
 .form {
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 50%;
 }
 
@@ -48,4 +51,23 @@ img {
   font-weight: 800;
   font-size: 48px;
   line-height: 72px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  padding-top: 15px;
+  padding-bottom: 3px;
+  font-weight: normal;
+}
+
+input[type="text"] {
+  width: 100%;
+  font-size: 13px;
+  padding: 11px 100px 11px 15px;
+  border: 0.2px solid darkgrey;
+  border-radius: 5px;
 }
