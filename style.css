@@ -27,6 +27,7 @@ a {
 
 .register {
   display: flex;
+  position: relative;
 }
 
 img {
@@ -36,7 +37,9 @@ img {
 }
 
 .form {
-  margin: 9vh 8vw;
+  position: absolute;
+  top: 10%;
+  left: 50%;
 }
 
 .form h1 {
