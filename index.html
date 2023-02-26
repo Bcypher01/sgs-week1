@@ -21,35 +21,42 @@
       <div class="img"><img src="images/Rectangle.png" alt="register" /></div>
       <div class="form">
         <h1>Create Account</h1>
-        <form action="post">
+        <form action="post" id="form">
           <div class="form-input">
             <label for="">First Name</label>
-            <input type="text" placeholder="Enter First Name" class="input" name="" />
+            <input type="text" placeholder="Enter First Name" class="input" name="first" id="first" />
+            <small></small>
           </div>
           <div class="form-input">
             <label for="">Last Name</label>
-            <input type="text" placeholder="Enter First Name" class="input" name="" />
+            <input type="text" placeholder="Enter Last Name" class="input" name="first" id="last" />
+            <small></small>
           </div>
           
           <div class="form-input">
             <label for="">Phone Number</label>
-            <input type="text" class="input" name="" />
+            <input type="text" placeholder="Enter Phone Number" class="input" name="number" id="number"/>
+            <small></small>
           </div>
           
           <div class="form-input">
             <label for="">Email</label>
-            <input type="email" class="input" name="" />
+            <input type="email" placeholder="Enter Email Address" class="input" name="mail" id="mail"/>
+            <small></small>
           </div>
           
           <div class="form-input">
             <label for="">Password</label>
-            <input type="password" class="input" name="" />
+            <input type="password" placeholder="Enter Password" class="input" name="password" id="password" />
+            <small></small>
           </div>
-          
-            <button type="submit" class="btn">Submit</button>
+            <div class="clear">
+                <button type="submit" class="btn">Submit</button>
+            </div>
           </div>
         </form>
       </div>
     </div>
   </body>
+  <script src="form.js"></script>
 </html>

@@ -30,10 +30,6 @@ a {
   position: relative;
 }
 
-.img {
-  /* object-fit: cover; */
-}
-
 img {
   height: 85vh;
   width: 43vw;
@@ -41,13 +37,12 @@ img {
 
 .form {
   position: absolute;
-  top: 5%;
+  /* top: 5%; */
   left: 50%;
 }
 
 .form h1 {
-  /* width: 391px;
-  height: 72px; */
+  height: 72px;
   font-weight: 800;
   font-size: 48px;
   line-height: 72px;
@@ -65,9 +60,46 @@ label {
 }
 
 input {
-  width: 100%;
+  /* width: 85%; */
   font-size: 13px;
   padding: 11px 100px 11px 15px;
   border: 0.2px solid darkgrey;
   border-radius: 5px;
+}
+
+input:focus,
+select:focus {
+  border: 0.2px solid darkgrey;
+  outline: none;
+}
+
+button {
+  padding: 0.5rem 3rem;
+  border: none;
+  background-color: #19467d;
+  font-size: 18px;
+  font-weight: lighter;
+  color: #fff;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.clear {
+  /* clear: both; */
+  margin-top: 5%;
+  margin-bottom: 20%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+small {
+  color: red;
+  padding-top: 5px;
+  display: flex;
+  margin-left: auto;
+  margin-right: 0;
 }
