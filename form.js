@@ -17,6 +17,7 @@ function validate(input, inputEl) {
 
     default:
       showError(inputEl, "");
+      inputEl.classList.remove("error");
       valid = true;
       break;
   }
@@ -31,7 +32,7 @@ const showError = (input, message) => {
   const formField = input.parentElement;
 
   // add the error class
-  formField.classList.add("error");
+  input.classList.add("error");
 
   // show the error message
   const error = formField.querySelector("small");
