@@ -18,6 +18,7 @@ function validate(input, inputEl) {
     default:
       showError(inputEl, "");
       inputEl.classList.remove("error");
+      inputEl.classList.add("success");
       valid = true;
       break;
   }
