@@ -54,7 +54,7 @@ img {
 }
 
 label {
-  padding-top: 15px;
+  padding-top: 2px;
   padding-bottom: 3px;
   font-weight: normal;
 }
@@ -100,7 +100,7 @@ button:hover {
 
 small {
   color: red;
-  padding-top: 3px;
+  padding-top: 1px;
   display: flex;
   margin-left: auto;
   margin-right: 0;
@@ -108,4 +108,46 @@ small {
 
 .success {
   border: 0.2px solid #006400;
+}
+
+.icon {
+  position: relative;
+  left: 320px;
+  bottom: 4vh;
+}
+
+@media only screen and (max-width: 480px) {
+  /* For mobile phones: */
+  img {
+    display: none;
+  }
+  .form {
+    /* top: 5%; */
+    left: 10% !important;
+  }
+  .icon {
+    position: relative;
+    left: 250px;
+    bottom: 3vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For laptops: */
+  .form h1 {
+    height: 52px;
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  .icon {
+    position: relative;
+    left: 250px;
+    bottom: 4vh;
+  }
+  .form {
+    position: absolute;
+    /* top: 5%; */
+    left: 45%;
+  }
 }
